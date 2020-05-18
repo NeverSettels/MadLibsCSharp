@@ -6,12 +6,14 @@ namespace Madlib.models
     public string Noun2 { get; set; }
     public string Verb1 { get; set; }
     public string Verb2 { get; set; }
-    public MadVariable(string noun1, string noun2, string verb1, string verb2)
+    public string Adjective1 { get; set; }
+    public MadVariable(string noun1, string noun2, string verb1, string verb2, string adjective1)
     {
       Noun1 = noun1;
       Noun2 = noun2;
       Verb1 = verb1;
       Verb2 = verb2;
+      Adjective1 = adjective1;
     }
   }
 }

@@ -4,19 +4,17 @@
     <meta charset='utf-8'>
     <title>C# madlib!</title>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel="stylesheet" type="text/css" href="~/css/styles.css" >
   </head>
   <body>
-    <h1>Do stuff for the madlib!</h1>
+    <h1 id="type">Do a Madlib!</h1>
     <form action="/madlib" method="post">
-     <label for="noun1">Enter the first noun</label>
-     <input id="noun1" name="properNoun" type="text">
-     <label for="noun2">Enter the second noun</label>
-     <input id="noun2" name="noun2" type="text">
-     <label for="verb1">Enter the first verb</label>
-     <input id="verb1" name="verb1" type="text">
-     <label for="verb2">Enter the second verb</label>
-     <input id="verb2" name="verb2" type="text">
-     <button type="submit" class = "btn btn-success">Go!</button>
+     <input id="noun1" name="properNoun" type="text" placeholder="Enter a plural noun" required>
+     <input id="noun2" name="noun2" type="text" placeholder="Enter a noun" required>
+     <input id="verb1" name="verb1" type="text" placeholder="Enter the first verb" required>
+     <input id="verb2" name="verb2" type="text" placeholder="Enter the second verb" required>
+     <input id="adjective1" name="adjective1" type="text" placeholder="Enter the first adjective" required>
+     <button type="submit" id="btnLocation">Go!</button>
     </form>
   </body>
 </html>
