@@ -35,9 +35,7 @@ namespace FriendLetter
       });
       app.Run(async (context) =>
       {
-
         await context.Response.WriteAsync("ERROR 404 - Please submit a utlized route! For example = /form || /madlib");
-        Console.WriteLine(context.Response);
       });
 
       app.UseDeveloperExceptionPage();
