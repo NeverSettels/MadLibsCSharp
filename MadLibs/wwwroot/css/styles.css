@@ -65,3 +65,34 @@ b{
   font-size: 18px;
   font-weight:700;
 }
+#intro {
+  background-color: rgba(0, 0, 0, 0.367);
+  background: linear-gradient(rgb(255, 0, 0), rgb(3, 192, 255), rgb(6, 255, 47));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: .5px;
+  color: transparent;
+  font-size: 18px;
+  font-weight:700;
+}
+.rainbow1::placeholder , .blue{
+  color: aqua;
+  
+}
+.rainbow2::placeholder , .red{
+  color: red;
+  
+}
+.rainbow3::placeholder , .green{
+  color: green;
+  
+}
+.rainbow4::placeholder , .purple{
+  color: purple;
+  
+}
+.rainbow5::placeholder , .orange{
+  color: orange;
+  
+}
