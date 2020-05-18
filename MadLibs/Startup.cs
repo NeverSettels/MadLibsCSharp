@@ -33,6 +33,8 @@ namespace FriendLetter
             name: "default",
             template: "{controller=Home}/{action=Index}/{id?}");
       });
+
+      app.UseStaticFiles();
       app.Run(async (context) =>
       {
         await context.Response.WriteAsync("ERROR 404 - Please submit a utlized route! For example = /form || /madlib");
