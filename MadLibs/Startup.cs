@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-
+using System;
 
 namespace FriendLetter
 {
@@ -35,7 +35,9 @@ namespace FriendLetter
       });
       app.Run(async (context) =>
       {
-        await context.Response.WriteAsync("MAD MadLibs!");
+
+        await context.Response.WriteAsync("ERROR 404 - Please submit a utlized route! For example = /form || /madlib");
+        Console.WriteLine(context.Response);
       });
 
       app.UseDeveloperExceptionPage();
